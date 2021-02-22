@@ -174,36 +174,6 @@
         }
       }
       return false;
-
-      // for (row = 0; row < this.get('n'); row++) {
-      //   if (rows[row][column] !== undefined) {
-      //     counter += rows[row][column];
-      //   }
-      //   counter++;
-      // }
-      // if (majorDiagonalColumnIndexAtFirstRow > 0) {
-      //   for (var j = 1; j < rows.length; j++) {
-      //     var currentCheck = rows[j][0];
-      //     var nextCheck = rows[j][1];
-      //     if (currentCheck === 1) {
-      //       counter++;
-      //       currentCheck = nextCheck;
-      //     }
-      //     if (counter > 1) {
-      //       return true;
-      //     }
-      //   }
-      // }
-      // for (var i = 0; i < rows.length; i++) {
-      //   if (rows[i][majorDiagonalColumnIndexAtFirstRow] === 1) {
-      //     counter++;
-      //     majorDiagonalColumnIndexAtFirstRow++;
-      //   }
-      //   if (counter > 1) {
-      //     return true;
-      //   }
-      // }
-      // loop over rows
     },
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
