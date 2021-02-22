@@ -209,7 +209,7 @@
     hasAnyMajorDiagonalConflicts: function() {
       var table = this.rows();
       var column = this.get('n');
-      for (var i = -2; i < column; i++) {
+      for (var i = 0 - (column - 2); i < column; i++) {
         if (this.hasMajorDiagonalConflictAt(i)) {
           return true;
         }
